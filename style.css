@@ -1,0 +1,125 @@
+body {
+    display : flex;
+  }
+  
+  .main {
+    align-self: center;
+    height : 30em;
+    width : 20em;
+    font-family: 'Roboto', sans-serif !important;
+    color : #767676;
+    border : 1px solid grey;
+    margin : 0 auto;
+    user-select : none;
+  }
+  
+  .view {
+    height : 25%;
+    text-align: right;
+    letter-spacing: 5px;
+    overflow: hidden;
+  }
+  
+  #view-out {
+    height : 70%;
+  }
+  
+  #view-in {
+    float: right;
+    position: relative;
+    bottom : -20%;
+    padding: 8% 0;
+    line-height: 20px;
+  }
+  
+  #answer-auto {
+    height : 30%;
+  }
+  
+  #answer {
+    float: right;
+    font-size : 22px;
+    color : #959595;
+  }
+  
+  .numberpad {
+    height : 75%;
+    width: 100%;
+    background-color : #636363;
+    display : flex;
+  }
+  
+  button {
+    height : 2.8em;
+    width : 2.2em;
+    color : #EEE;
+    background : transparent;
+    border : none;
+    outline : none;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  
+  .numbers {
+    background : #434343;
+    min-width : 75%;
+    height : 100%;
+  }
+  
+  .numbers button {
+    font-size: 28px;
+    width : 32.1%;
+  }
+  
+  .right-align {
+    min-width: 25%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .clear {
+    padding-top: 1em;
+    font-size : 20px !important;
+  }
+  
+  .right-align button {
+    width : 100%;
+    height : 58px; 
+    font-size: 26px;
+  }
+  
+  .bottomRow {
+    margin-top: -1em;
+  }
+  
+  @media (max-device-width: 600px) {
+    .main {
+      height : 100vh;
+      width : 100vw;
+      margin: 0px;
+      padding : 0px;    
+      border : none;
+    }
+  
+    /* .view {
+      height : 30%;
+    } */
+  
+    .numberpad {
+      /* height : 70%; */
+      text-align: center;
+    }
+    
+    button {
+      width : 30%;
+      height : 4.5em;
+    }
+  
+    .right-align button{
+      height : 100px; 
+      font-size: 40px;  
+    }
+  
+    .clear {
+      font-size : 30px !important;
+    }
+  }
